@@ -111,7 +111,7 @@ public class BookingPage extends BaseClass{
     public void selectDate(String departureDate1, String retDate) {
         depatureDate.click();
 
-        WebElement table = driver.findElement(By.cssSelector("body > div:nth-child(19) > div.datepicker-days > table"));
+        WebElement table = driver.findElement(By.cssSelector("body > div:nth-child(20) > div.datepicker-days > table"));
         WebElement rows = table.findElement(By.tagName("thead"));
         List<WebElement> tr = rows.findElements(By.tagName("tr"));
         List<WebElement> th = tr.get(0).findElements(By.tagName("th"));
@@ -127,7 +127,7 @@ public class BookingPage extends BaseClass{
                 }while(!th.get(1).getText().equalsIgnoreCase(dateSplit[1]+" "+dateSplit[2]));
                 selectDate(table, dateSplit[0]);
             }
-        WebElement returnDatetable = driver.findElement(By.cssSelector("body > div:nth-child(20) > div.datepicker-days > table"));
+        WebElement returnDatetable = driver.findElement(By.cssSelector("body > div:nth-child(23) > div.datepicker-days > table"));
         WebElement returnDateRows = returnDatetable.findElement(By.tagName("thead"));
         List<WebElement> returnDateTr = returnDateRows.findElements(By.tagName("tr"));
         List<WebElement> returnDateTh = returnDateTr.get(0).findElements(By.tagName("th"));
