@@ -17,4 +17,4 @@ Feature: Cheapest price Flight Booking
 
     Examples:
       |TypeOfTrip    | DepartureAirPort| ArrivalAirPort | DepartureDate       | ReturnDate       | NoOfAdultTickets | NoOfChildTickets | flightCarrier       |
-      |  Round Trip  | LCY             | DXB            |  02-April-2019   | 18-April-2019 |   2              |       2          |     Tunisair,Qatar Airways  |
+      |  Round Trip  | LCY             | DXB            |  18-March-2019   | 03-April-2019 |   2              |       2          |     Tunisair,Qatar Airways  |
